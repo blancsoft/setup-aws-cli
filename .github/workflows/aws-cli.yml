@@ -9,9 +9,6 @@ on:
     branches:
       - '*'
 
-env:
-  VERSION: 1.32.71
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,8 +19,8 @@ jobs:
       - name: AWS CLI Action
         uses: ./
         with:
-          version: $VERSION
+          version: 1.32.71
 
       - name: Check for AWS CLI version
         run:
-            aws --version | grep -q "${VERSION}"
+            aws --version | grep -q "1.32.71"
