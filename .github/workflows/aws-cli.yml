@@ -1,0 +1,29 @@
+name: aws-cli
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+env:
+  VERSION: 2.15.30
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: AWS CLI Action
+        uses: ./
+        with:
+          version: "$VERSION"
+
+      - name: Check for AWS CLI version
+        run:
+            aws --version | grep -q "$VERSION"
