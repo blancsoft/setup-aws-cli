@@ -7,7 +7,7 @@ inputs:
   version:
     description: 'AWS CLI version to use.'
     required: true
-    default: '1.7.5'
+    default: '1.32.71'
   python_version:
     description: Python Version (defaults to 3.12)
     required: true

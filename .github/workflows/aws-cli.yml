@@ -10,7 +10,7 @@ on:
       - '*'
 
 env:
-  VERSION: 2.15.30
+  VERSION: 1.32.71
 
 jobs:
   build:
