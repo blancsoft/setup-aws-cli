@@ -1,4 +1,4 @@
-name: 'Setup AWS CLI'
+name: 'Blancsoft AWS CLI'
 description: 'Setup your workflow with AWS CLI'
 branding:
   icon: 'arrow-right-circle'
