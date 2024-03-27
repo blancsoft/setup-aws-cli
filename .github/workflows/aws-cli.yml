@@ -22,8 +22,8 @@ jobs:
       - name: AWS CLI Action
         uses: ./
         with:
-          version: "$VERSION"
+          version: $VERSION
 
       - name: Check for AWS CLI version
         run:
-            aws --version | grep -q "$VERSION"
+            aws --version | grep -q "${VERSION}"
